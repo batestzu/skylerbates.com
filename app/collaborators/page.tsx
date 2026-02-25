@@ -20,35 +20,35 @@ const collaborators: Collaborator[] = [
     role: "Vocals · Guitar · Songwriter",
     shortBio: "The voice and pen behind it all — writing from the intersection of grief and wonder.",
     fullBio:
-      "Skyler Bates has been writing songs since they were old enough to hold a guitar. Their music is rooted in the American folk tradition but pushes toward something harder to name — a sound that lives in the space between a lullaby and a heartbreak. Based in Nashville, Skyler has performed across the country, sharing stages with artists ranging from indie folk to Americana. Their songs have been described as both devastatingly sad and quietly hopeful, often at the same time.",
-    instruments: ["Vocals", "Acoustic Guitar", "Electric Guitar", "Piano"],
+      "Skyler Bates has been trying to figure his life out for a whiile now. Still working on it. For know he enjoys his family, his music and his friends.",
+    instruments: ["Vocals", "Acoustic Guitar", "Electric Guitar", "Producer"],
   },
   {
     id: "2",
-    name: "Marcus Webb",
-    role: "Bass · Producer",
-    shortBio: "Holds everything together from the low end. Has a way of making silence feel like music.",
+    name: "Mikhil Desai",
+    role: "Guitarist: Cool Guy : Composer",
+    shortBio: "The only thing more Golden than his Fingers; Is his heart.",
     fullBio:
-      "Marcus Webb grew up in Memphis, the son of a church musician and a jazz bassist. He came up through gospel before finding his way into the singer-songwriter world, and that lineage shows — there's a depth and intentionality to every note he plays. As a producer, Marcus has a gift for creating space, for knowing when to pull back and let the song breathe. He and Skyler have been collaborating since 2020.",
-    instruments: ["Bass Guitar", "Upright Bass", "Keys"],
+      "Mikhil Desai was taught by the Gods how to rock when he was but a wee infant in his crib. He doesnt remember, but his fingers do. Mikhil is currently on a quest. The depth of which his heart cannot seem to comprehend. Until then, you can see us in the Band: Instant Shaman which was formed in 2022 in Augusta, GA.",
+    instruments: ["Lead Guitar", "Rhythm", "Pedal Expert", "Quartermaster"],
   },
   {
     id: "3",
-    name: "Priya Anand",
-    role: "Violin · Arrangements",
-    shortBio: "Brings classical training and a feral spirit. Her string arrangements make rooms feel bigger.",
+    name: "Stephen Boucher",
+    role: "Drums · Wearing Suits",
+    shortBio: "Stephen is the heartbeat of Instant Shaman. His beats guide us; his fashion inspires us.",
     fullBio:
-      "Priya Anand began studying violin at age four, went on to study at conservatory, and then promptly decided to play in every genre she could find. She discovered folk and Americana in her mid-twenties and never looked back. Priya's arrangements for Skyler's songs draw on everything from Appalachian fiddle to chamber music, and the result is something entirely her own. She also teaches and runs a string quartet in Nashville.",
+     "When Stephen Boucher was born in Japan, the nurse said something his parents could not understand: 太鼓打ち.",
     instruments: ["Violin", "Viola", "Orchestral Arrangements"],
   },
   {
     id: "4",
-    name: "Dani Reyes",
-    role: "Drums · Percussion",
-    shortBio: "Plays with the restraint of someone who knows exactly how much to hold back.",
+    name: "Freddie Gray",
+    role: "Bass : Vocals : Musical Genius",
+    shortBio: "Plays from hips; Sings from the soul",
     fullBio:
-      "Dani Reyes is a Nashville-based drummer who has played on more records than they can count. What makes Dani special isn't flash — it's taste. They know that great drumming in a folk or Americana context is about feel, about locking in with the song rather than competing with it. Off stage, Dani is a devoted record collector and can usually be found digging through bins at the local shop on weekends.",
-    instruments: ["Drums", "Percussion", "Brushes"],
+      "Freddie Gray was on track to be a drummer, thats until he got himself a bass guitar and realized that the world needed him to be a bassist. He has been playing bass for 10 years and has been in several bands in the Augusta area. Instant Shaman is of course is his favorite band for obvious reasons",
+    instruments: ["Bass", "Composer", "Vocals"]
   },
 ];
 
