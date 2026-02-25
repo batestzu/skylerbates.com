@@ -2,31 +2,30 @@
 
 import { motion } from "framer-motion";
 
-// Replace src with real YouTube/Vimeo embed URLs
 const videos = [
   {
     id: "1",
-    title: "Live at The Basement",
-    subtitle: "Nashville, TN · 2024",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Solo Pt II",
+    subtitle: "YouTube Short",
+    embedUrl: "https://www.youtube.com/embed/7IGWjHAgwJs",
   },
   {
     id: "2",
-    title: "Studio Session #1",
-    subtitle: "Behind the scenes",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Plz Don Call",
+    subtitle: "Official release",
+    embedUrl: "https://www.youtube.com/embed/OafaooBQ10c",
   },
   {
     id: "3",
-    title: "Acoustic Set",
-    subtitle: "Living room performance",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "She Likes Sara More Than Me",
+    subtitle: "Official release",
+    embedUrl: "https://www.youtube.com/embed/k-PObcemCjU",
   },
   {
     id: "4",
-    title: "Music Video",
-    subtitle: "Official release",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Used to be",
+    subtitle: "batestzu · YouTube Short",
+    embedUrl: "https://www.youtube.com/embed/VzSdinFkxKk",
   },
 ];
 

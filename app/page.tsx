@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-// Placeholder photo grid — swap src values for real images
 const photos = [
-  { id: 1, alt: "Skyler performing live", aspect: "tall" },
-  { id: 2, alt: "Studio session", aspect: "wide" },
-  { id: 3, alt: "Backstage portrait", aspect: "square" },
-  { id: 4, alt: "Outdoor shoot", aspect: "tall" },
-  { id: 5, alt: "Close-up detail", aspect: "square" },
-  { id: 6, alt: "Live at venue", aspect: "wide" },
+  { id: 1, type: "photo", src: "/photos/Highlander Poster.jpg", alt: "Highlander poster", aspect: "tall" },
+  { id: 2, type: "photo", src: "/photos/Partridge Roof Top.jpg", alt: "Partridge Inn Rooftop", aspect: "wide" },
+  { id: 3, type: "photo", src: "/photos/Sologuitar.jpg", alt: "Solo guitar", aspect: "square" },
+  { id: 4, type: "video", src: "https://www.youtube.com/embed/7IGWjHAgwJs", alt: "Solo Pt II", aspect: "tall" },
+  { id: 5, type: "video", src: "https://www.youtube.com/embed/OafaooBQ10c", alt: "Plz Don Call", aspect: "wide" },
+  { id: 6, type: "video", src: "https://www.youtube.com/embed/k-PObcemCjU", alt: "She Likes Sara More Than Me", aspect: "wide" },
+  { id: 7, type: "video", src: "https://www.youtube.com/embed/VzSdinFkxKk", alt: "Used to be", aspect: "tall" },
 ];
 
 const fadeUp = {
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="flex-1 h-px bg-[rgba(245,240,235,0.08)]" />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {photos.map((photo, i) => (
             <motion.div
               key={photo.id}
@@ -124,22 +124,28 @@ export default function Home() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
-              className={`relative overflow-hidden bg-[rgba(255,255,255,0.03)] group cursor-pointer ${
-                photo.aspect === "tall"
-                  ? "aspect-[3/4]"
-                  : photo.aspect === "wide"
-                  ? "aspect-[16/9]"
-                  : "aspect-square"
-              } ${i === 1 ? "col-span-2 md:col-span-1" : ""}`}
+              className="relative overflow-hidden group cursor-pointer aspect-square"
             >
-              {/* Placeholder — replace with real <Image> when photos are available */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#C2185B]/10 to-[#7C3AED]/10" />
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <span className="text-[#F5F0EB]/10 font-[family-name:var(--font-cormorant)] text-lg italic text-center">
-                  {photo.alt}
-                </span>
-              </div>
-              <div className="absolute inset-0 bg-[#C2185B]/0 group-hover:bg-[#C2185B]/10 transition-colors duration-500" />
+              {photo.type === "video" ? (
+                <iframe
+                  src={photo.src}
+                  title={photo.alt}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              ) : (
+                <>
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-[#C2185B]/0 group-hover:bg-[#C2185B]/10 transition-colors duration-500" />
+                </>
+              )}
             </motion.div>
           ))}
         </div>
