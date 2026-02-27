@@ -24,7 +24,7 @@ const collaborators: Collaborator[] = [
     photo: "/collaborators/skyback.jpg",
     shortBio: "The voice and pen behind it all — writing from the intersection of grief and wonder.",
     fullBio:
-      "Skyler Bates has been trying to figure his life out for a whiile now. Still working on it. For now he enjoys his family, his music and his friends.",
+      "Skyler Bates has been trying to figure his life out for a while now. Still working on it. For now he enjoys his family, his music and his friends.",
     instruments: ["Vocals", "Acoustic Guitar", "Electric Guitar", "Producer"],
   },
   {
@@ -45,7 +45,7 @@ const collaborators: Collaborator[] = [
     shortBio: "Stephen is the heartbeat of Instant Shaman. His beats guide us; his fashion inspires us.",
     fullBio:
      "When Stephen Boucher was born in Japan, the nurse said something his parents could not understand: 太鼓打ち.",
-    instruments: ["Violin", "Viola", "Orchestral Arrangements"],
+    instruments: ["Drums", "Percussion", "Vocals"],
   },
   {
     id: "4",
