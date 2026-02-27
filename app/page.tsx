@@ -49,7 +49,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xs uppercase tracking-[0.3em] text-[#C2185B] mb-4 font-[family-name:var(--font-inter)]"
           >
-            Singer · Songwriter · Collaborator
+            Singer · Songwriter · Producer · Executive · Performer · Booking Agent · Human
           </motion.p>
 
           <motion.h1

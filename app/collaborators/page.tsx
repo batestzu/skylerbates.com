@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Collaborator {
@@ -9,6 +10,8 @@ interface Collaborator {
   role: string;
   shortBio: string;
   fullBio: string;
+  photo?: string;
+  photoPosition?: string;
   instruments?: string[];
   links?: { label: string; href: string }[];
 }
@@ -18,15 +21,17 @@ const collaborators: Collaborator[] = [
     id: "1",
     name: "Skyler Bates",
     role: "Vocals · Guitar · Songwriter",
+    photo: "/collaborators/skyback.jpg",
     shortBio: "The voice and pen behind it all — writing from the intersection of grief and wonder.",
     fullBio:
-      "Skyler Bates has been trying to figure his life out for a whiile now. Still working on it. For know he enjoys his family, his music and his friends.",
+      "Skyler Bates has been trying to figure his life out for a whiile now. Still working on it. For now he enjoys his family, his music and his friends.",
     instruments: ["Vocals", "Acoustic Guitar", "Electric Guitar", "Producer"],
   },
   {
     id: "2",
     name: "Mikhil Desai",
     role: "Guitarist: Cool Guy : Composer",
+    photo: "/collaborators/mikhil.jpg",
     shortBio: "The only thing more Golden than his Fingers; Is his heart.",
     fullBio:
       "Mikhil Desai was taught by the Gods how to rock when he was but a wee infant in his crib. He doesnt remember, but his fingers do. Mikhil is currently on a quest. The depth of which his heart cannot seem to comprehend. Until then, you can see us in the Band: Instant Shaman which was formed in 2022 in Augusta, GA.",
@@ -36,6 +41,7 @@ const collaborators: Collaborator[] = [
     id: "3",
     name: "Stephen Boucher",
     role: "Drums · Wearing Suits",
+    photo: "/collaborators/Stephen.jpg",
     shortBio: "Stephen is the heartbeat of Instant Shaman. His beats guide us; his fashion inspires us.",
     fullBio:
      "When Stephen Boucher was born in Japan, the nurse said something his parents could not understand: 太鼓打ち.",
@@ -45,6 +51,8 @@ const collaborators: Collaborator[] = [
     id: "4",
     name: "Freddie Gray",
     role: "Bass : Vocals : Musical Genius",
+    photo: "/collaborators/Freddie.jpeg",
+    photoPosition: "center 1px",
     shortBio: "Plays from hips; Sings from the soul",
     fullBio:
       "Freddie Gray was on track to be a drummer, thats until he got himself a bass guitar and realized that the world needed him to be a bassist. He has been playing bass for 10 years and has been in several bands in the Augusta area. Instant Shaman is of course is his favorite band for obvious reasons",
@@ -65,11 +73,21 @@ function CollaboratorCard({ person, index }: { person: Collaborator; index: numb
     >
       {/* Header */}
       <div className="p-8 pb-6">
-        {/* Avatar placeholder */}
-        <div className="w-16 h-16 mb-5 bg-gradient-to-br from-[#C2185B]/20 to-[#7C3AED]/20 border border-[rgba(245,240,235,0.06)] flex items-center justify-center">
-          <span className="font-[family-name:var(--font-cormorant)] text-2xl text-[#F5F0EB]/20 font-light">
-            {person.name.split(" ").map((n) => n[0]).join("")}
-          </span>
+        {/* Avatar */}
+        <div className="w-64 h-64 mb-5 relative overflow-hidden bg-gradient-to-br from-[#C2185B]/20 to-[#7C3AED]/20 border border-[rgba(245,240,235,0.06)] flex items-center justify-center">
+          {person.photo ? (
+            <Image
+              src={person.photo}
+              alt={person.name}
+              fill
+              className="object-cover"
+              style={{ objectPosition: person.photoPosition ?? "center" }}
+            />
+          ) : (
+            <span className="font-[family-name:var(--font-cormorant)] text-7xl text-[#F5F0EB]/20 font-light">
+              {person.name.split(" ").map((n) => n[0]).join("")}
+            </span>
+          )}
         </div>
 
         <h2 className="font-[family-name:var(--font-cormorant)] text-2xl font-light text-[#F5F0EB] mb-1">

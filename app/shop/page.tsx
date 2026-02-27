@@ -10,7 +10,7 @@ const songs = [
     id: "1",
     title: process.env.NEXT_PUBLIC_SONG_TITLE || "Untitled Track",
     description: "A new original — yours for whatever you can give.",
-    duration: "3:47",
+    duration: "2:34",
     year: "2025",
   },
 ];
