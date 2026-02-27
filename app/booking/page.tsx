@@ -20,6 +20,7 @@ export default function BookingPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     organization: "",
     eventType: "",
     date: "",
@@ -132,6 +133,20 @@ export default function BookingPage() {
                   value={formData.email}
                   onChange={(e) => update("email", e.target.value)}
                   placeholder="jane@example.com"
+                  className={inputClass}
+                />
+              </div>
+            </div>
+
+            {/* Row 1b: Phone */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label className={labelClass}>Phone number</label>
+                <input
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => update("phone", e.target.value)}
+                  placeholder="+1 (555) 000-0000"
                   className={inputClass}
                 />
               </div>
