@@ -132,7 +132,7 @@ const shows: Show[] = [
     venue: "Boil Weeval - Instant Shaman - Acoustic",
     city: "Augusta",
     stateCountry: "GA",
-    ticketUrl: "https://www.facebook.com/abritishpub",
+    ticketUrl: "https://thebollweevil.com/",
     note: "Brunch: 12-3 PM"
     }
 
