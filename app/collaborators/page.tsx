@@ -63,9 +63,11 @@ const collaborators: Collaborator[] = [
     name: "Andres Hoyos",
     role: "Founder · VibeWithUs Entertainment",
     photo: "/collaborators/andres.jpg",
+    photoPosition: "center 0px",
     shortBio: "The VibeMeister, The Street Reporter, The Strategist",
     fullBio:
       "Andres is the founder of VibeWithUs Entertainment. Inspired by love of the founded VibeWithUs documents local events, helps businesses thrive and gives emerging artists opportunities",
+    instruments: ["Keys", "Promoter", "Photographer"],
   },
 ];
 
