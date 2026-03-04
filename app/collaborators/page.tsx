@@ -58,6 +58,15 @@ const collaborators: Collaborator[] = [
       "Freddie Gray was on track to be a drummer, thats until he got himself a bass guitar and realized that the world needed him to be a bassist. He has been playing bass for 10 years and has been in several bands in the Augusta area. Instant Shaman is of course is his favorite band for obvious reasons",
     instruments: ["Bass", "Composer", "Vocals"]
   },
+  {
+    id: "5",
+    name: "Andres Hoyos",
+    role: "Founder · VibeWithUs Entertainment",
+    photo: "/collaborators/andres.jpg",
+    shortBio: "The VibeMeister, The Street Reporter, The Strategist",
+    fullBio:
+      "Andres is the founder of VibeWithUs Entertainment. Inspired by love of the founded VibeWithUs documents local events, helps businesses thrive and gives emerging artists opportunities",
+  },
 ];
 
 function CollaboratorCard({ person, index }: { person: Collaborator; index: number }) {
