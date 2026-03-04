@@ -65,8 +65,78 @@ const shows: Show[] = [
     ticketUrl: "https://www.instagram.com/vibewithusarts/?hl=en",
     note: "Happy Bones Benefit Show"
   },
-  
-];
+  {
+    id: "6",
+    date: "11 Mar 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander - Hosting Open Mic Night",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+   id: "7",
+    date: "13 Mar 2026",
+    dayOfWeek: "Friday",
+    venue: "Swetwater's Edge",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    note: "Host: Open Mic Night"
+   },
+  {
+    id: "8",
+    date: "18 Mar 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander - Hosting Open Mic Night",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+    },
+    {
+    id: "9",
+    date: "20 Mar 2026",
+    dayOfWeek: "Friday",
+    venue: "Swetwater's Edge",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    note: "Host: Open Mic Night" 
+    },
+    {
+    id: "10",
+    date: "25 Mar 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander - Hosting Open Mic Night",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+    },
+    {
+      id: "11",
+    date: "27 Mar 2026",
+    dayOfWeek: "Friday",
+    venue: "Invite Onlyt",
+    city: "Augusta",
+    stateCountry: "GA",
+    ticketUrl: "https://www.facebook.com/InstantShaman",
+    note: "We Do Private Functions!"
+    },
+    {
+      id: "12",
+    date: "29 Mar 2026",
+    dayOfWeek: "Sunday",
+    venue: "Boil Weeval - Instant Shaman - Acoustic",
+    city: "Augusta",
+    stateCountry: "GA",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Brunch: 12-3 PM"
+    }
+
+  ];
 
 export default function ShowsPage() {
   return (

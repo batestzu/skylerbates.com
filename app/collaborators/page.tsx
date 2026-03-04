@@ -21,8 +21,8 @@ const collaborators: Collaborator[] = [
     id: "1",
     name: "Skyler Bates",
     role: "Vocals · Guitar · Songwriter",
-    photo: "/collaborators/skyback.jpg",
-    shortBio: "The voice and pen behind it all — writing from the intersection of grief and wonder.",
+    photo: "/collaborators/skyback.JPG",
+    shortBio: "A voice; A pen, writing from the intersection of grief and wonder.",
     fullBio:
       "Skyler Bates has been trying to figure his life out for a while now. Still working on it. For now he enjoys his family, his music and his friends.",
     instruments: ["Vocals", "Acoustic Guitar", "Electric Guitar", "Producer"],
