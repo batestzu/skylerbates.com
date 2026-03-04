@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const socials = [
-  { label: "Instagram", href: "https://instagram.com/skylerbates" },
+  { label: "Meta", href: "https://www.facebook.com/skyles.bates" },
   { label: "Spotify", href: "https://open.spotify.com/artist/skylerbates" },
-  { label: "YouTube", href: "https://youtube.com/@skylerbates" },
-  { label: "Bandcamp", href: "https://skylerbates.bandcamp.com" },
+  { label: "YouTube", href: "https://www.youtube.com/@BatesTzu" },
+  { label: "Bandcamp", href: "https://skylerbates.bandcamp.com/" },
 ];
 
 export default function Footer() {
