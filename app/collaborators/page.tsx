@@ -71,8 +71,47 @@ const collaborators: Collaborator[] = [
   },
 ];
 
+function PhotoLightbox({ src, alt, position, onClose }: { src: string; alt: string; position?: string; onClose: () => void }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <motion.div
+        initial={{ scale: 0.88, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.88, opacity: 0 }}
+        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        className="relative w-[90vw] max-w-2xl aspect-square"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          className="object-cover"
+          style={{ objectPosition: position ?? "center" }}
+          sizes="(max-width: 768px) 90vw, 672px"
+        />
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-black/60 text-[#F5F0EB]/80 hover:text-[#F5F0EB] text-lg leading-none transition-colors"
+          aria-label="Close"
+        >
+          ×
+        </button>
+      </motion.div>
+    </motion.div>
+  );
+}
+
 function CollaboratorCard({ person, index }: { person: Collaborator; index: number }) {
   const [expanded, setExpanded] = useState(false);
+  const [photoOpen, setPhotoOpen] = useState(false);
 
   return (
     <motion.div
@@ -85,13 +124,17 @@ function CollaboratorCard({ person, index }: { person: Collaborator; index: numb
       {/* Header */}
       <div className="p-8 pb-6">
         {/* Avatar */}
-        <div className="w-64 h-64 mb-5 relative overflow-hidden bg-gradient-to-br from-[#C2185B]/20 to-[#7C3AED]/20 border border-[rgba(245,240,235,0.06)] flex items-center justify-center">
+        <div
+          className={`w-64 h-64 mb-5 relative overflow-hidden bg-gradient-to-br from-[#C2185B]/20 to-[#7C3AED]/20 border border-[rgba(245,240,235,0.06)] flex items-center justify-center${person.photo ? " cursor-zoom-in" : ""}`}
+          onClick={() => person.photo && setPhotoOpen(true)}
+          title={person.photo ? "Click to expand" : undefined}
+        >
           {person.photo ? (
             <Image
               src={person.photo}
               alt={person.name}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-300 hover:scale-105"
               style={{ objectPosition: person.photoPosition ?? "center" }}
             />
           ) : (
@@ -174,6 +217,17 @@ function CollaboratorCard({ person, index }: { person: Collaborator; index: numb
           )}
         </AnimatePresence>
       </div>
+
+      <AnimatePresence>
+        {photoOpen && person.photo && (
+          <PhotoLightbox
+            src={person.photo}
+            alt={person.name}
+            position={person.photoPosition}
+            onClose={() => setPhotoOpen(false)}
+          />
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
