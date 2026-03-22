@@ -17,116 +17,46 @@ interface Show {
 const shows: Show[] = [
   {
     id: "1",
-    date: "25 Feb 2026",
+    date: "25 Mar 2026",
     dayOfWeek: "Wednesday",
-    venue: "The Highlander - Hosting Open Mic Night",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
+    venue: "The Maxwell Performing Arts Theatre",
+    city: "Augusta",
+    stateCountry: "GA",
+    ticketUrl: "https://www.instagram.com/p/DUjJUIEEdEf/",
+    note: "Rooted 250"
   },
   {
     id: "2",
-    date: "27 Feb 2026",
-    dayOfWeek: "Friday",
-    venue: "Swetwater's Edge",
+    date: "25 Mar 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
     city: "North Augusta",
     stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    ticketUrl: "https://www.facebook.com/abritishpub",
     note: "Host: Open Mic Night"
   },
   {
     id: "3",
-    date: "28 Feb 2026",
-    dayOfWeek: "Saturday",
-    venue: "The Fox's Lair",
-    city: "Augusta",
-    stateCountry: "GA",
-    ticketUrl: "https://oldetowninn.online/",
-    note: "Chris Called Us"
-  },
-  {
-    id: "4",
-    date: "4 Mar 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander - Hosting Open Mic Night",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "5",
-    date: "6 Mar 2026",
-    dayOfWeek: "Friday",
-    venue: "Southbound Smokehouse - Instant Shaman",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.instagram.com/vibewithusarts/?hl=en",
-    note: "Happy Bones Benefit Show"
-  },
-  {
-    id: "6",
-    date: "11 Mar 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander - Hosting Open Mic Night",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-   id: "7",
-    date: "13 Mar 2026",
-    dayOfWeek: "Friday",
-    venue: "Swetwater's Edge",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
-    note: "Host: Open Mic Night"
-   },
-  {
-    id: "8",
-    date: "18 Mar 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander - Hosting Open Mic Night",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-    },
-    {
-    id: "9",
-    date: "20 Mar 2026",
-    dayOfWeek: "Friday",
-    venue: "Swetwater's Edge",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
-    note: "Host: Open Mic Night" 
-    },
-    {
-    id: "10",
-    date: "25 Mar 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander - Hosting Open Mic Night",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-    },
-    {
-      id: "11",
     date: "27 Mar 2026",
     dayOfWeek: "Friday",
-    venue: "Invite Onlyt",
+    venue: "Invite Only",
     city: "Augusta",
     stateCountry: "GA",
     ticketUrl: "https://www.facebook.com/InstantShaman",
     note: "We Do Private Functions!"
-    },
-    {
-      id: "12",
+  },
+  {
+    id: "4",
+    date: "28 Mar 2026",
+    dayOfWeek: "Saturday",
+    venue: "Sweetwaters Edge",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    note: "Tommy Kole Benefit Show"
+  },
+  {
+    id: "5",
     date: "29 Mar 2026",
     dayOfWeek: "Sunday",
     venue: "Boil Weeval - Instant Shaman - Acoustic",
@@ -134,9 +64,88 @@ const shows: Show[] = [
     stateCountry: "GA",
     ticketUrl: "https://thebollweevil.com/",
     note: "Brunch: 12-3 PM"
-    }
-
-  ];
+  },
+  {
+    id: "6",
+    date: "1 Apr 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "7",
+    date: "8 Apr 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "8",
+    date: "10 Apr 2026",
+    dayOfWeek: "Friday",
+    venue: "Sweetwaters Edge",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    note: "Open Mic Night"
+  },
+  {
+    id: "9",
+    date: "15 Apr 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "10",
+    date: "17 Apr 2026",
+    dayOfWeek: "Friday",
+    venue: "Sweetwaters Edge",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    note: "Open Mic Night"
+  },
+  {
+    id: "11",
+    date: "22 Apr 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "12",
+    date: "24 Apr 2026",
+    dayOfWeek: "Friday",
+    venue: "Sweetwaters Edge",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
+    note: "Open Mic Night"
+  },
+  {
+    id: "13",
+    date: "29 Apr 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+];
 
 export default function ShowsPage() {
   return (
