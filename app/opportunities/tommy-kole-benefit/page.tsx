@@ -25,6 +25,7 @@ export default function TommyKoleBenefitPage() {
     bringingFriends: "",
     equipmentRequests: "",
     favoriteBeverage: "",
+    reference: "",
   });
 
   function update(field: string, value: string) {
@@ -141,6 +142,18 @@ export default function TommyKoleBenefitPage() {
                 value={formData.name}
                 onChange={(e) => update("name", e.target.value)}
                 placeholder="Your name or act name"
+                className={inputClass}
+              />
+            </div>
+
+            {/* Personal or Musical Reference */}
+            <div>
+              <label className={labelClass}>Personal or Musical Reference</label>
+              <input
+                type="text"
+                value={formData.reference}
+                onChange={(e) => update("reference", e.target.value)}
+                placeholder="e.g. social media, website, etc."
                 className={inputClass}
               />
             </div>

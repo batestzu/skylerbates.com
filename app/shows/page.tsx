@@ -86,6 +86,16 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
+    id: "14",
+    date: "8 Apr 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Partridge Inn",
+    city: "Augusta",
+    stateCountry: "GA",
+    ticketUrl: "https://www.partridgeinn.com",
+    note: "Masters Week"
+  },
+  {
     id: "8",
     date: "10 Apr 2026",
     dayOfWeek: "Friday",
