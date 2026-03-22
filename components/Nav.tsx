@@ -12,6 +12,7 @@ const links = [
   { href: "/shows", label: "Shows" },
   { href: "/booking", label: "Booking" },
   { href: "/collaborators", label: "Collaborators" },
+  { href: "/opportunities", label: "Opportunities" },
 ];
 
 export default function Nav() {
