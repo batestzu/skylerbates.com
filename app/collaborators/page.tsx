@@ -44,7 +44,7 @@ const collaborators: Collaborator[] = [
     photo: "/collaborators/Stephen.jpg",
     shortBio: "Stephen is the heartbeat of Instant Shaman. His beats guide us; his fashion inspires us.",
     fullBio:
-     "When Stephen Boucher was born in Japan, the nurse said something his parents could not understand: 太鼓打ち.",
+     "When Stephen Boucher was born in Japan, the nurse said something his parents could not understand: 太鼓打ち. He started playing the jinbei in church. Which, much to his parents dismay, led to becomming a drummer. Stephen has been playing professionally since 2022 and has been a member of several bands, including Instant Shaman.",
     instruments: ["Drums", "Percussion", "Vocals"],
   },
   {
@@ -55,18 +55,18 @@ const collaborators: Collaborator[] = [
     photoPosition: "center 1px",
     shortBio: "Plays from hips; Sings from the soul",
     fullBio:
-      "Freddie Gray was on track to be a drummer, thats until he got himself a bass guitar and realized that the world needed him to be a bassist. He has been playing bass for 10 years and has been in several bands in the Augusta area. Instant Shaman is of course is his favorite band for obvious reasons",
+      "Freddie Gray was on track to be a drummer, thats until he got himself a bass guitar and realized that the world needed him to be a bassist. He has been playing bass for 10 years and is in several bands in the Augusta area. Instant Shaman is of course his favorite band.",
     instruments: ["Bass", "Composer", "Vocals"]
   },
   {
     id: "5",
     name: "Andres Hoyos",
-    role: "Founder · VibeWithUs Entertainment",
+    role: "Founder oF VibeWithUs Entertainment",
     photo: "/collaborators/andres.jpg",
     photoPosition: "center 0px",
-    shortBio: "The VibeMeister, The Street Reporter, The Strategist",
+    shortBio: "The VibeMeister, The Promoter, The Strategist",
     fullBio:
-      "Andres is the founder of VibeWithUs Entertainment. Inspired by love of the founded VibeWithUs documents local events, helps businesses thrive and gives emerging artists opportunities",
+      "Andres is the founder of VibeWithUs Entertainment. Inspired by love of the local music scene of Augusta: VibeWithUs documents local events, helps businesses thrive and gives emerging artists opportunities",
     instruments: ["Keys", "Promoter", "Photographer"],
   },
 ];
