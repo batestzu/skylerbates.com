@@ -59,7 +59,7 @@ const shows: Show[] = [
     id: "5",
     date: "29 Mar 2026",
     dayOfWeek: "Sunday",
-    venue: "Boil Weeval - Instant Shaman - Acoustic",
+    venue: "Boll Weevil - Instant Shaman - Acoustic",
     city: "Augusta",
     stateCountry: "GA",
     ticketUrl: "https://thebollweevil.com/",
