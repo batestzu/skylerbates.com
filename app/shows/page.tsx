@@ -16,18 +16,8 @@ interface Show {
 // Update these shows as dates approach
 const shows: Show[] = [
   {
-    id: "1",
-    date: "25 Mar 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Maxwell Performing Arts Theatre",
-    city: "Augusta",
-    stateCountry: "GA",
-    ticketUrl: "https://www.instagram.com/p/DUjJUIEEdEf/",
-    note: "Rooted 250"
-  },
-  {
-    id: "2",
-    date: "25 Mar 2026",
+    id: "16",
+    date: "13 May 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -36,78 +26,18 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "3",
-    date: "27 Mar 2026",
-    dayOfWeek: "Friday",
-    venue: "Invite Only",
-    city: "Augusta",
-    stateCountry: "GA",
-    ticketUrl: "https://www.facebook.com/InstantShaman",
-    note: "We Do Private Functions!"
-  },
-  {
-    id: "4",
-    date: "28 Mar 2026",
+    id: "15",
+    date: "16 May 2026",
     dayOfWeek: "Saturday",
-    venue: "Sweetwaters Edge",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
-    note: "Tommy Kole Benefit Show"
-  },
-  {
-    id: "5",
-    date: "29 Mar 2026",
-    dayOfWeek: "Sunday",
-    venue: "Boll Weevil - Instant Shaman - Acoustic",
-    city: "Augusta",
-    stateCountry: "GA",
-    ticketUrl: "https://thebollweevil.com/",
-    note: "Brunch: 12-3 PM"
-  },
-  {
-    id: "6",
-    date: "1 Apr 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "7",
-    date: "8 Apr 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "14",
-    date: "8 Apr 2026",
-    dayOfWeek: "Wednesday",
     venue: "The Partridge Inn",
     city: "Augusta",
     stateCountry: "GA",
     ticketUrl: "https://www.partridgeinn.com",
-    note: "Masters Week"
+    note: "Rooftop"
   },
   {
-    id: "8",
-    date: "10 Apr 2026",
-    dayOfWeek: "Friday",
-    venue: "Sweetwaters Edge",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
-    note: "Open Mic Night"
-  },
-  {
-    id: "9",
-    date: "15 Apr 2026",
+    id: "17",
+    date: "20 May 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -116,18 +46,8 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "10",
-    date: "17 Apr 2026",
-    dayOfWeek: "Friday",
-    venue: "Sweetwaters Edge",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
-    note: "Open Mic Night"
-  },
-  {
-    id: "11",
-    date: "22 Apr 2026",
+    id: "18",
+    date: "27 May 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -136,18 +56,38 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "12",
-    date: "24 Apr 2026",
-    dayOfWeek: "Friday",
-    venue: "Sweetwaters Edge",
+    id: "19",
+    date: "3 Jun 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
     city: "North Augusta",
     stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/p/Sweetwaters-Edge-61576975732009/",
-    note: "Open Mic Night"
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
   },
   {
-    id: "13",
-    date: "29 Apr 2026",
+    id: "20",
+    date: "10 Jun 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "21",
+    date: "17 Jun 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "22",
+    date: "24 Jun 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
