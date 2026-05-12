@@ -25,3 +25,4 @@ export async function addSubscriber(row: SubscriberRow): Promise<void> {
     throw new Error("Failed to save subscriber.");
   }
 }
+
