@@ -3,16 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const opportunities = [
-  {
-    href: "/opportunities/tommy-kole-benefit",
-    title: "Tommy Kole Benefit Show",
-    date: "28 Mar",
-    venue: "Sweetwaters Edge",
-    description: "Sign up to perform at this benefit show. Fill out the questionnaire and we'll be in touch.",
-    open: true,
-  },
-];
+const opportunities: { href: string; title: string; date: string; venue: string; description: string; open: boolean }[] = [];
 
 export default function OpportunitiesPage() {
   return (
