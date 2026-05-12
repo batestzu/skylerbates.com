@@ -66,6 +66,16 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
+    id: "23",
+    date: "6 Jun 2026",
+    dayOfWeek: "Saturday",
+    venue: "Brinks Tavern",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://brinkstavern.com",
+    note: "Lets go!"
+  },
+  {
     id: "20",
     date: "10 Jun 2026",
     dayOfWeek: "Wednesday",
@@ -94,6 +104,26 @@ const shows: Show[] = [
     stateCountry: "SC",
     ticketUrl: "https://www.facebook.com/abritishpub",
     note: "Host: Open Mic Night"
+  },
+  {
+    id: "24",
+    date: "4 Jul 2026",
+    dayOfWeek: "Saturday",
+    venue: "Brinks Tavern",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://brinkstavern.com",
+    note: "Lets go!"
+  },
+  {
+    id: "25",
+    date: "31 Jul 2026",
+    dayOfWeek: "Friday",
+    venue: "Brinks Tavern",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://brinkstavern.com",
+    note: "Lets go!"
   },
 ];
 
