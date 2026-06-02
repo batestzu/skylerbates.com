@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { addSubscriber } from "@/lib/supabase";
+import { addContact } from "@/lib/contacts";
 import { sendSongEmail } from "@/lib/sendgrid";
 
 export async function POST(req: NextRequest) {
@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
 
     const title = songTitle || process.env.SONG_TITLE || "Download";
 
-    await addSubscriber({ email, amount_paid: 0, song_title: title });
+    await addContact(email);
     await sendSongEmail(email);
 
     return NextResponse.json({ ok: true });

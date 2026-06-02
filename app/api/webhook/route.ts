@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { constructStripeEvent } from "@/lib/stripe";
-import { addSubscriber } from "@/lib/supabase";
+import { addContact } from "@/lib/contacts";
 import { sendSongEmail } from "@/lib/sendgrid";
 import type Stripe from "stripe";
 
@@ -29,8 +29,6 @@ export async function POST(req: NextRequest) {
     const session = event.data.object as Stripe.Checkout.Session;
 
     const email = session.customer_email || (session.metadata?.email ?? "");
-    const songTitle = session.metadata?.song_title || process.env.SONG_TITLE || "Download";
-    const amountPaid = session.amount_total ? session.amount_total / 100 : 0;
 
     if (!email) {
       console.error("[webhook] No email found on session", session.id);
@@ -38,12 +36,7 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      await addSubscriber({
-        email,
-        amount_paid: amountPaid,
-        song_title: songTitle,
-        stripe_session_id: session.id,
-      });
+      await addContact(email);
       await sendSongEmail(email);
     } catch (err) {
       console.error("[webhook] post-payment fulfillment failed:", err);
