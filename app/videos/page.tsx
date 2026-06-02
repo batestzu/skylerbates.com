@@ -27,6 +27,12 @@ const videos = [
     subtitle: "batestzu · YouTube Short",
     embedUrl: "https://www.youtube.com/embed/VzSdinFkxKk",
   },
+  {
+    id: "5",
+    title: "Rooted: Live @ Rooted250",
+    subtitle: "Skyler A Bates",
+    embedUrl: "https://www.youtube.com/embed/YmkgAcczM18",
+  },
 ];
 
 const fadeUp = {
