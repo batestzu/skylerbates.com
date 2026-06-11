@@ -75,14 +75,24 @@ export async function sendOpportunityAlert(data: Record<string, string>): Promis
   if (!from) throw new Error("SENDGRID_FROM_EMAIL is not configured.");
 
   const fieldLabels: Record<string, string> = {
-    opportunity: "Opportunity",
+    opportunity: "Opportunity / Venue",
     name: "Name / Act",
+    groupName: "Group Name",
+    email: "Email",
+    phone: "Phone",
+    actType: "Act Type",
+    instruments: "Instrument(s)",
+    openToCollabs: "Open to Collaborations",
+    performanceType: "Performance Type",
+    idealTimeSlot: "Ideal Time Slot",
+    dayNightPreference: "Day / Night Preference",
     setLength: "Set Length",
     earliestTime: "Earliest Available",
     latestTime: "Latest Available",
     bringingFriends: "Bringing Friends",
     equipmentRequests: "Equipment Requests",
     favoriteBeverage: "Favorite Beverage",
+    notes: "Additional Notes",
   };
 
   const rows = Object.entries(fieldLabels)
