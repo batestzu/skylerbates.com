@@ -16,76 +16,6 @@ interface Show {
 // Update these shows as dates approach
 const shows: Show[] = [
   {
-    id: "16",
-    date: "13 May 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "15",
-    date: "16 May 2026",
-    dayOfWeek: "Saturday",
-    venue: "The Partridge Inn",
-    city: "Augusta",
-    stateCountry: "GA",
-    ticketUrl: "https://www.partridgeinn.com",
-    note: "Rooftop"
-  },
-  {
-    id: "17",
-    date: "20 May 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "18",
-    date: "27 May 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "19",
-    date: "3 Jun 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "23",
-    date: "6 Jun 2026",
-    dayOfWeek: "Saturday",
-    venue: "Brinks Tavern",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://brinkstavern.com",
-    note: "Lets go!"
-  },
-  {
-    id: "20",
-    date: "10 Jun 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
     id: "21",
     date: "17 Jun 2026",
     dayOfWeek: "Wednesday",
@@ -114,6 +44,15 @@ const shows: Show[] = [
     stateCountry: "SC",
     ticketUrl: "https://brinkstavern.com",
     note: "Lets go!"
+  },
+  {
+    id: "26",
+    date: "4 Jul 2026",
+    dayOfWeek: "Saturday",
+    venue: "5th Street Depot",
+    city: "Augusta",
+    stateCountry: "GA",
+    note: "Augusta 4th of July Celebration; 5pm–6pm"
   },
   {
     id: "25",
