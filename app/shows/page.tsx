@@ -36,6 +36,16 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
+    id: "27",
+    date: "1 Jul 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
     id: "24",
     date: "4 Jul 2026",
     dayOfWeek: "Saturday",
@@ -53,6 +63,46 @@ const shows: Show[] = [
     city: "Augusta",
     stateCountry: "GA",
     note: "Augusta 4th of July Celebration; 5pm–6pm"
+  },
+  {
+    id: "28",
+    date: "8 Jul 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "29",
+    date: "15 Jul 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "30",
+    date: "22 Jul 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "31",
+    date: "29 Jul 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
   },
   {
     id: "25",
