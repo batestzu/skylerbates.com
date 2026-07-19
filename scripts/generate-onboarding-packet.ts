@@ -83,7 +83,7 @@ async function main() {
   // Content must stop above the footer rule at MARGIN + 24
   const BOTTOM = MARGIN + 40;
 
-  let page: import("pdf-lib").PDFPage;
+  let page!: import("pdf-lib").PDFPage;
   let y = 0;
 
   function drawFooter(p: import("pdf-lib").PDFPage) {
