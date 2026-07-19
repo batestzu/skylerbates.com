@@ -27,8 +27,10 @@ const sections: Section[] = [
   {
     title: "House Rules",
     items: [
-      "Set lengths, volume guidelines, and stage conduct — details coming soon.",
-      "Equipment and backline expectations — details coming soon.",
+      "Set lengths must be 45 minutes minimum, Two fifteen minute breaks are acceptable, Breaks cannot exceed 30 minutes! Inside volume should not exceed 80 db as measured for the speaker.",
+      "Be kind to all staff members. If there are any issues contact your booking agent (e.g. US). Do not engage any unusal conflict: take a break and call us",
+      "Unless mentioned above, you are responsible for your sound. DO NOT LEAVE ANY EQUIPMENT AT THE VENUE. WE , 432 Intelligence / VibeWithUS, our associates or the host venue, will not be responsible for it.",
+      "Tip your bartenders!",
     ],
   },
   {
@@ -42,8 +44,8 @@ const sections: Section[] = [
   {
     title: "Agreements",
     items: [
-      "Payment terms and cancellation notice — details coming soon.",
-      "Promotion expectations — details coming soon.",
+      "Payment terms and cancellation notice — You will be paid the day off the show before you leave the venue. We need at least 48 hours notice of cancellation",
+      "Promotion expectations — If you make a promo share it with us; we will share it. If we make a promo you share it. ",
       "Paid contractors must submit a W-9 before their first payout — use the secure form linked below.",
     ],
   },
