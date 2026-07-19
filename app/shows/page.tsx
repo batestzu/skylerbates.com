@@ -16,75 +16,6 @@ interface Show {
 // Update these shows as dates approach
 const shows: Show[] = [
   {
-    id: "21",
-    date: "17 Jun 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "22",
-    date: "24 Jun 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "27",
-    date: "1 Jul 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "24",
-    date: "4 Jul 2026",
-    dayOfWeek: "Saturday",
-    venue: "Brinks Tavern",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://brinkstavern.com",
-    note: "Lets go!"
-  },
-  {
-    id: "26",
-    date: "4 Jul 2026",
-    dayOfWeek: "Saturday",
-    venue: "5th Street Depot",
-    city: "Augusta",
-    stateCountry: "GA",
-    note: "Augusta 4th of July Celebration; 5pm–6pm"
-  },
-  {
-    id: "28",
-    date: "8 Jul 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
-    id: "29",
-    date: "15 Jul 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
-  },
-  {
     id: "30",
     date: "22 Jul 2026",
     dayOfWeek: "Wednesday",
@@ -93,6 +24,24 @@ const shows: Show[] = [
     stateCountry: "SC",
     ticketUrl: "https://www.facebook.com/abritishpub",
     note: "Host: Open Mic Night"
+  },
+  {
+    id: "32",
+    date: "23 Jul 2026",
+    dayOfWeek: "Thursday",
+    venue: "Crowne Plaza",
+    city: "North Augusta",
+    stateCountry: "SC",
+    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+  },
+  {
+    id: "33",
+    date: "28 Jul 2026",
+    dayOfWeek: "Tuesday",
+    venue: "Crowne Plaza",
+    city: "North Augusta",
+    stateCountry: "SC",
+    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
   },
   {
     id: "31",
@@ -112,7 +61,25 @@ const shows: Show[] = [
     city: "North Augusta",
     stateCountry: "SC",
     ticketUrl: "https://brinkstavern.com",
-    note: "Lets go!"
+    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+  },
+  {
+    id: "34",
+    date: "11 Aug 2026",
+    dayOfWeek: "Tuesday",
+    venue: "Crowne Plaza",
+    city: "North Augusta",
+    stateCountry: "SC",
+    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+  },
+  {
+    id: "35",
+    date: "25 Aug 2026",
+    dayOfWeek: "Tuesday",
+    venue: "Crowne Plaza",
+    city: "North Augusta",
+    stateCountry: "SC",
+    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
   },
 ];
 

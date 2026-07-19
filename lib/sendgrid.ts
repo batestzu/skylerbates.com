@@ -119,6 +119,49 @@ export async function sendOpportunityAlert(data: Record<string, string>): Promis
 }
 
 /**
+ * Send a completed W-9 PDF to the HP ePrint printer address, with a backup
+ * copy to the artist's email. The PDF exists only in memory — it is never
+ * written to disk or stored anywhere.
+ */
+export async function sendW9Email(pdfBase64: string, contractorName: string): Promise<void> {
+  configureClient();
+
+  const printerEmail = process.env.PRINTER_EMAIL;
+  const artistEmail = process.env.ARTIST_EMAIL;
+  const from = process.env.SENDGRID_FROM_EMAIL;
+
+  if (!printerEmail) throw new Error("PRINTER_EMAIL is not configured.");
+  if (!artistEmail) throw new Error("ARTIST_EMAIL is not configured.");
+  if (!from) throw new Error("SENDGRID_FROM_EMAIL is not configured.");
+
+  const safeName = contractorName.replace(/[^a-z0-9]/gi, "_");
+  const attachment = {
+    content: pdfBase64,
+    filename: `W9-${safeName}.pdf`,
+    type: "application/pdf",
+    disposition: "attachment" as const,
+  };
+
+  // ePrint prints the email body as its own page, so keep it to one line.
+  await sgMail.send({
+    to: printerEmail,
+    from,
+    subject: `W-9: ${contractorName}`,
+    text: `W-9 attached for ${contractorName}.`,
+    attachments: [attachment],
+  });
+
+  // Backup copy to the artist in case the printer is offline.
+  await sgMail.send({
+    to: artistEmail,
+    from,
+    subject: `W-9 received: ${contractorName}`,
+    text: `A W-9 for ${contractorName} was submitted and sent to the printer. Backup copy attached.`,
+    attachments: [attachment],
+  });
+}
+
+/**
  * Send a booking inquiry alert to the artist's email.
  */
 export async function sendBookingAlert(data: Record<string, string>): Promise<void> {
