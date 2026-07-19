@@ -23,16 +23,18 @@ const sections: { title: string; items: string[] }[] = [
   {
     title: "Load-In & Soundcheck",
     items: [
-      "The Highlander — details coming soon.",
-      "The Partridge Inn — details coming soon.",
-      "Crowne Plaza — details coming soon.",
+      "The Highlander — Load-in: as early as 4:00 PM; park around back and inform staff — there is a ramp and rear entrance. Self-soundcheck: there is a Yamaha powered mixer with two 15s installed. A monitor can be daisy-chained, or there is an aux output for powered monitors. Free Yuengling!",
+      "The Partridge Inn — Load-in: as early as 4:00 PM. Check with staff for rooftop entry prior to 5:00 PM. Park in the lower parking deck (Hickman Road entrance). Carts are available at the front entrance of the hotel — please return them when finished loading. You will be provided photos of playing locations. In both cases, check sound with the host and/or bartender. There are no food or beverage comps.",
+      "Crowne Plaza — Load-in: as early as 4:00 PM, or 5:00 PM for roof shows. You may temporarily park (with hazards on) in front of the Salt & Marrow entrance; after you have unloaded, park in the parking garage nearest the hotel. If you have a parking fee in the garage, you may submit a receipt and be reimbursed separately from your performance compensation. Speak to your booking agent for further details.",
     ],
   },
   {
     title: "House Rules",
     items: [
-      "Set lengths, volume guidelines, and stage conduct — details coming soon.",
-      "Equipment and backline expectations — details coming soon.",
+      "Set lengths must be 45 minutes minimum. Two fifteen-minute breaks are acceptable — breaks cannot exceed 30 minutes! Inside volume should not exceed 80 dB as measured from the speaker.",
+      "Be kind to all staff members. If there are any issues, contact your booking agent (that's us). Do not engage in any unusual conflict: take a break and call us.",
+      "Unless mentioned above, you are responsible for your sound. DO NOT LEAVE ANY EQUIPMENT AT THE VENUE. We — 432 Intelligence / VibeWithUS, our associates, or the host venue — will not be responsible for it.",
+      "Tip your bartenders!",
     ],
   },
   {
@@ -46,8 +48,8 @@ const sections: { title: string; items: string[] }[] = [
   {
     title: "Agreements",
     items: [
-      "Payment terms and cancellation notice — details coming soon.",
-      "Promotion expectations — details coming soon.",
+      "Payment terms and cancellation notice — You will be paid the day of the show, before you leave the venue. We need at least 48 hours' notice of cancellation.",
+      "Promotion expectations — If you make a promo, share it with us and we will share it. If we make a promo, you share it.",
       "Paid contractors must submit a W-9 before their first payout via the secure form at skylerbates.com/docs.",
     ],
   },

@@ -11,15 +11,15 @@ interface Section {
 const venueLoadIns = [
   {
     venue: "The Highlander",
-    details: "Load-in: as early as 4:00 PM; park around back, inform staff, there is a ramp and rear entrance. Self- Soundcheck. there is a Yamaha Powered Mixer with two 15's installed. A monitor can be daisy chained or there is an aux output for powered monitors. Free Yuengling!",
+    details: "Load-in: as early as 4:00 PM; park around back and inform staff — there is a ramp and rear entrance. Self-soundcheck: there is a Yamaha powered mixer with two 15s installed. A monitor can be daisy-chained, or there is an aux output for powered monitors. Free Yuengling!",
   },
   {
     venue: "The Partridge Inn",
-    details: "Load-in: as early as 4:00 PM, Check with staff for rooftop entry prior to 5:00 PM. Park in the lower parking deck (Hickman Road Entrance). Carts are available at the front entrance of the hotel. Please return when finished loading. You will be provided photos of playing locations. In both cases check sound with host and or bartender. There are no food or beverage comps.",
+    details: "Load-in: as early as 4:00 PM. Check with staff for rooftop entry prior to 5:00 PM. Park in the lower parking deck (Hickman Road entrance). Carts are available at the front entrance of the hotel — please return them when finished loading. You will be provided photos of playing locations. In both cases, check sound with the host and/or bartender. There are no food or beverage comps.",
   },
   {
     venue: "Crowne Plaza",
-    details: "Load in: as early as 4:00 PM & 5:00 PM for roof shows; You may temporarially park (with hazards) in front of the "Salt & Marrow" entrance. after you have unloaded park in the parking garage nearest the hotel. If you have a parking fee in the garage, you may submit a reciept and be riembursed seperate from your performance compensation. Speak to booking agent for further details.",
+    details: "Load-in: as early as 4:00 PM, or 5:00 PM for roof shows. You may temporarily park (with hazards on) in front of the Salt & Marrow entrance; after you have unloaded, park in the parking garage nearest the hotel. If you have a parking fee in the garage, you may submit a receipt and be reimbursed separately from your performance compensation. Speak to your booking agent for further details.",
   },
 ];
 
@@ -27,9 +27,9 @@ const sections: Section[] = [
   {
     title: "House Rules",
     items: [
-      "Set lengths must be 45 minutes minimum, Two fifteen minute breaks are acceptable, Breaks cannot exceed 30 minutes! Inside volume should not exceed 80 db as measured for the speaker.",
-      "Be kind to all staff members. If there are any issues contact your booking agent (e.g. US). Do not engage any unusal conflict: take a break and call us",
-      "Unless mentioned above, you are responsible for your sound. DO NOT LEAVE ANY EQUIPMENT AT THE VENUE. WE , 432 Intelligence / VibeWithUS, our associates or the host venue, will not be responsible for it.",
+      "Set lengths must be 45 minutes minimum. Two fifteen-minute breaks are acceptable — breaks cannot exceed 30 minutes! Inside volume should not exceed 80 dB as measured from the speaker.",
+      "Be kind to all staff members. If there are any issues, contact your booking agent (that's us). Do not engage in any unusual conflict: take a break and call us.",
+      "Unless mentioned above, you are responsible for your sound. DO NOT LEAVE ANY EQUIPMENT AT THE VENUE. We — 432 Intelligence / VibeWithUS, our associates, or the host venue — will not be responsible for it.",
       "Tip your bartenders!",
     ],
   },
@@ -44,8 +44,8 @@ const sections: Section[] = [
   {
     title: "Agreements",
     items: [
-      "Payment terms and cancellation notice — You will be paid the day off the show before you leave the venue. We need at least 48 hours notice of cancellation",
-      "Promotion expectations — If you make a promo share it with us; we will share it. If we make a promo you share it. ",
+      "Payment terms and cancellation notice — You will be paid the day of the show, before you leave the venue. We need at least 48 hours' notice of cancellation.",
+      "Promotion expectations — If you make a promo, share it with us and we will share it. If we make a promo, you share it.",
       "Paid contractors must submit a W-9 before their first payout — use the secure form linked below.",
     ],
   },
