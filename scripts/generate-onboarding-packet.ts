@@ -79,14 +79,44 @@ async function main() {
   const sans = await doc.embedFont(StandardFonts.Helvetica);
   const sansBold = await doc.embedFont(StandardFonts.HelveticaBold);
 
-  const page = doc.addPage([PAGE_W, PAGE_H]);
-  page.drawRectangle({ x: 0, y: 0, width: PAGE_W, height: PAGE_H, color: CREAM });
-  // Crimson top band
-  page.drawRectangle({ x: 0, y: PAGE_H - 8, width: PAGE_W, height: 8, color: CRIMSON });
-
-  let y = PAGE_H - MARGIN - 12;
   const contentWidth = PAGE_W - MARGIN * 2;
+  // Content must stop above the footer rule at MARGIN + 24
+  const BOTTOM = MARGIN + 40;
 
+  let page: import("pdf-lib").PDFPage;
+  let y = 0;
+
+  function drawFooter(p: import("pdf-lib").PDFPage) {
+    p.drawLine({
+      start: { x: MARGIN, y: MARGIN + 24 },
+      end: { x: PAGE_W - MARGIN, y: MARGIN + 24 },
+      thickness: 0.5,
+      color: rgb(0.85, 0.83, 0.8),
+    });
+    p.drawText("Questions? theskylerbates@gmail.com   ·   skylerbates.com", {
+      x: MARGIN,
+      y: MARGIN + 8,
+      size: 9,
+      font: sans,
+      color: MUTED,
+    });
+  }
+
+  function newPage() {
+    page = doc.addPage([PAGE_W, PAGE_H]);
+    page.drawRectangle({ x: 0, y: 0, width: PAGE_W, height: PAGE_H, color: CREAM });
+    // Crimson top band
+    page.drawRectangle({ x: 0, y: PAGE_H - 8, width: PAGE_W, height: 8, color: CRIMSON });
+    drawFooter(page);
+    y = PAGE_H - MARGIN - 12;
+  }
+
+  // Break to a new page unless there is room for `needed` more points of content
+  function ensureRoom(needed: number) {
+    if (y - needed < BOTTOM) newPage();
+  }
+
+  newPage();
   page.drawText("ARTIST ONBOARDING", { x: MARGIN, y, size: 11, font: sansBold, color: CRIMSON });
   y -= 30;
 
@@ -112,10 +142,14 @@ async function main() {
   y -= 30;
 
   for (const section of sections) {
+    // Keep the section title attached to at least its first two item lines
+    ensureRoom(20 + 30);
     page.drawText(section.title, { x: MARGIN, y, size: 16, font: serif, color: INK });
     y -= 20;
     for (const item of section.items) {
       const lines = wrap(item, sans, 10, contentWidth - 16);
+      // Keep whole items together — none is longer than a page
+      ensureRoom(lines.length * 15);
       let first = true;
       for (const line of lines) {
         if (first) {
@@ -129,20 +163,11 @@ async function main() {
     y -= 14;
   }
 
-  // Footer
-  page.drawLine({
-    start: { x: MARGIN, y: MARGIN + 24 },
-    end: { x: PAGE_W - MARGIN, y: MARGIN + 24 },
-    thickness: 0.5,
-    color: rgb(0.85, 0.83, 0.8),
-  });
-  page.drawText("Questions? theskylerbates@gmail.com   ·   skylerbates.com", {
-    x: MARGIN,
-    y: MARGIN + 8,
-    size: 9,
-    font: sans,
-    color: MUTED,
-  });
+  // Blank W-9 (page 1 of the official IRS form) for artists who prefer paper
+  const fw9Bytes = fs.readFileSync(path.join(process.cwd(), "public", "fw9.pdf"));
+  const fw9 = await PDFDocument.load(fw9Bytes);
+  const [w9Page] = await doc.copyPages(fw9, [0]);
+  doc.addPage(w9Page);
 
   const bytes = await doc.save();
   const out = path.join(process.cwd(), "public", "onboarding-packet.pdf");
