@@ -36,8 +36,8 @@ const sections: Section[] = [
   {
     title: "Perks",
     items: [
-      "Venue hospitality (drinks / meals) — details coming soon.",
-      "Promotion on the skylerbates.com shows page and social channels.",
+      "Venue hospitality (drinks / meals) — Check above.",
+      "Promotion on social channels.",
       "Strong performances lead to recurring slots across our partner venues.",
     ],
   },
