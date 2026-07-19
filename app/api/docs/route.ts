@@ -5,6 +5,28 @@ import { sendW9Email } from "@/lib/sendgrid";
 const SSN_RE = /^\d{3}-?\d{2}-?\d{4}$/;
 const EIN_RE = /^\d{2}-?\d{7}$/;
 
+// Best-effort in-memory rate limiting (per warm serverless instance — resets on
+// cold start, which is acceptable for a low-traffic, obscure endpoint).
+// Two layers: failed access-code attempts per IP (brute-force protection, since
+// every valid submission triggers a physical print) and a global cap on
+// successful prints (paper/ink protection if the code ever leaks).
+const failedAttempts = new Map<string, number[]>();
+const printTimes: number[] = [];
+
+const FAIL_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+const MAX_FAILS_PER_IP = 5;
+const PRINT_WINDOW_MS = 24 * 60 * 60 * 1000; // 24 hours
+const MAX_PRINTS_PER_WINDOW = 10;
+
+function clientIp(req: NextRequest): string {
+  return req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+}
+
+function prune(times: number[], windowMs: number): void {
+  const cutoff = Date.now() - windowMs;
+  while (times.length && times[0] < cutoff) times.shift();
+}
+
 const CLASSIFICATIONS = new Set([
   "individual",
   "ccorp",
@@ -25,7 +47,18 @@ export async function POST(req: NextRequest) {
     if (!accessCode) {
       return NextResponse.json({ error: "This form is not currently available." }, { status: 503 });
     }
+    const ip = clientIp(req);
+    const fails = failedAttempts.get(ip) ?? [];
+    prune(fails, FAIL_WINDOW_MS);
+    if (fails.length >= MAX_FAILS_PER_IP) {
+      return NextResponse.json(
+        { error: "Too many attempts. Please try again later." },
+        { status: 429 }
+      );
+    }
     if (body.accessCode !== accessCode) {
+      fails.push(Date.now());
+      failedAttempts.set(ip, fails);
       return NextResponse.json({ error: "Invalid access code." }, { status: 401 });
     }
 
@@ -60,6 +93,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    prune(printTimes, PRINT_WINDOW_MS);
+    if (printTimes.length >= MAX_PRINTS_PER_WINDOW) {
+      return NextResponse.json(
+        { error: "The daily submission limit has been reached. Please try again tomorrow." },
+        { status: 429 }
+      );
+    }
+
     const date = new Date().toLocaleDateString("en-US", {
       month: "2-digit",
       day: "2-digit",
@@ -89,6 +130,7 @@ export async function POST(req: NextRequest) {
     });
 
     await sendW9Email(Buffer.from(pdfBytes).toString("base64"), name);
+    printTimes.push(Date.now());
 
     return NextResponse.json({ ok: true });
   } catch (err) {
