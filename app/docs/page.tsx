@@ -151,7 +151,7 @@ export default function DocsPage() {
             <div>
               <label className={labelClass}>Access code *</label>
               <input
-                type="password"
+                type="text"
                 required
                 autoComplete="off"
                 value={formData.accessCode}
