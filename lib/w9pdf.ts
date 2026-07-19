@@ -116,5 +116,10 @@ export async function generateW9Pdf(templateBytes: ArrayBuffer, data: W9Data): P
     color: BLUE,
   });
 
-  return doc.save();
+  // Only page 1 is the actual form — drop the IRS instruction pages so the
+  // printer doesn't churn out five pages of boilerplate per submission.
+  const trimmed = await PDFDocument.create();
+  const [firstPage] = await trimmed.copyPages(doc, [0]);
+  trimmed.addPage(firstPage);
+  return trimmed.save();
 }
