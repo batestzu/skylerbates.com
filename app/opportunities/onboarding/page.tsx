@@ -11,11 +11,11 @@ interface Section {
 const venueLoadIns = [
   {
     venue: "The Highlander",
-    details: "Load-in and soundcheck times to be confirmed — details coming soon.",
+    details: "Load-in: as early as 4:00 PM; park around back, inform staff, there is a ramp and rear entrance. Self- Soundcheck. there is a Yamaha Powered Mixer with two 15's installed. A monitor can be daisy chained or there is an aux output for powered monitors. Free Yuengling!",
   },
   {
     venue: "The Partridge Inn",
-    details: "Load-in and soundcheck times to be confirmed — details coming soon.",
+    details: "Load-in: as early as 4:00 PM, Check with staff for rooftop entry prior to 5:00 PM.",
   },
   {
     venue: "Crowne Plaza",
