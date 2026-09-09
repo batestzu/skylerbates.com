@@ -8,7 +8,7 @@ interface Show {
   dayOfWeek: string;
   venue: string;
   city: string;
-  stateCountry: string;
+  stateCountry?: string;
   ticketUrl?: string;
   note?: string;
 }
@@ -16,8 +16,8 @@ interface Show {
 // Update these shows as dates approach
 const shows: Show[] = [
   {
-    id: "30",
-    date: "22 Jul 2026",
+    id: "40",
+    date: "9 Sep 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -26,26 +26,17 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "32",
-    date: "23 Jul 2026",
-    dayOfWeek: "Thursday",
-    venue: "Crowne Plaza",
-    city: "North Augusta",
-    stateCountry: "SC",
-    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+    id: "50",
+    date: "12 Sep 2026",
+    dayOfWeek: "Saturday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "4pm · Livestream"
   },
   {
-    id: "33",
-    date: "28 Jul 2026",
-    dayOfWeek: "Tuesday",
-    venue: "Crowne Plaza",
-    city: "North Augusta",
-    stateCountry: "SC",
-    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
-  },
-  {
-    id: "31",
-    date: "29 Jul 2026",
+    id: "41",
+    date: "16 Sep 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -54,32 +45,73 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "25",
-    date: "31 Jul 2026",
-    dayOfWeek: "Friday",
-    venue: "Brinks Tavern",
+    id: "42",
+    date: "23 Sep 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
     city: "North Augusta",
     stateCountry: "SC",
-    ticketUrl: "https://brinkstavern.com",
-    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
   },
   {
-    id: "34",
-    date: "11 Aug 2026",
-    dayOfWeek: "Tuesday",
-    venue: "Crowne Plaza",
+    id: "43",
+    date: "30 Sep 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
     city: "North Augusta",
     stateCountry: "SC",
-    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
   },
   {
-    id: "35",
-    date: "25 Aug 2026",
-    dayOfWeek: "Tuesday",
-    venue: "Crowne Plaza",
+    id: "51",
+    date: "3 Oct 2026",
+    dayOfWeek: "Saturday",
+    venue: "Fox's Lair",
+    city: "Augusta",
+    stateCountry: "GA",
+    note: "$5 cover · 9pm"
+  },
+  {
+    id: "44",
+    date: "7 Oct 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
     city: "North Augusta",
     stateCountry: "SC",
-    note: "Instant Shaman (Acoustic Duo) · 7–10pm"
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "45",
+    date: "14 Oct 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "46",
+    date: "21 Oct 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "47",
+    date: "28 Oct 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
   },
 ];
 
@@ -146,7 +178,7 @@ export default function ShowsPage() {
                     )}
                   </div>
                   <p className="text-xs text-[#F5F0EB]/40 font-[family-name:var(--font-inter)] mt-0.5">
-                    {show.city}, {show.stateCountry}
+                    {show.city}{show.stateCountry ? `, ${show.stateCountry}` : ""}
                   </p>
                 </div>
               </div>
