@@ -134,6 +134,7 @@ function CollaboratorCard({ person, index }: { person: Collaborator; index: numb
               src={person.photo}
               alt={person.name}
               fill
+              sizes="256px"
               className="object-cover transition-transform duration-300 hover:scale-105"
               style={{ objectPosition: person.photoPosition ?? "center" }}
             />

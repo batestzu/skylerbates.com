@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const photos = [
   { id: 1, type: "photo", src: "/photos/Highlander Poster.jpg", alt: "Highlander poster", aspect: "tall" },
@@ -127,14 +128,7 @@ export default function Home() {
               className="relative overflow-hidden group cursor-pointer aspect-square"
             >
               {photo.type === "video" ? (
-                <iframe
-                  src={photo.src}
-                  title={photo.alt}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                  loading="lazy"
-                />
+                <YouTubeEmbed embedUrl={photo.src} title={photo.alt} />
               ) : (
                 <>
                   <Image

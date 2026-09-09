@@ -40,7 +40,7 @@ export default function Nav() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? "bg-[#080808]/95 backdrop-blur-md border-b border-[rgba(245,240,235,0.08)]" : "bg-transparent"
+          scrolled ? "bg-[#080808]/95 backdrop-blur-sm border-b border-[rgba(245,240,235,0.08)]" : "bg-transparent"
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">

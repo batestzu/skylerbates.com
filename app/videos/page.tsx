@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const videos = [
   {
@@ -85,14 +86,7 @@ export default function VideosPage() {
           >
             {/* Embed */}
             <div className="relative w-full aspect-video bg-[rgba(255,255,255,0.03)] border border-[rgba(245,240,235,0.06)] overflow-hidden mb-4">
-              <iframe
-                src={video.embedUrl}
-                title={video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-                loading="lazy"
-              />
+              <YouTubeEmbed embedUrl={video.embedUrl} title={video.title} />
             </div>
             <h2 className="font-[family-name:var(--font-cormorant)] text-xl font-light text-[#F5F0EB] mb-1">
               {video.title}
