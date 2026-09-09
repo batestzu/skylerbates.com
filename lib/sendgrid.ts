@@ -162,6 +162,52 @@ export async function sendW9Email(pdfBase64: string, contractorName: string): Pr
 }
 
 /**
+ * Send a business meeting request alert to the artist's email.
+ */
+export async function sendMeetingAlert(data: Record<string, string>): Promise<void> {
+  configureClient();
+
+  const artistEmail = process.env.ARTIST_EMAIL;
+  const from = process.env.SENDGRID_FROM_EMAIL;
+
+  if (!artistEmail) throw new Error("ARTIST_EMAIL is not configured.");
+  if (!from) throw new Error("SENDGRID_FROM_EMAIL is not configured.");
+
+  const fieldLabels: Record<string, string> = {
+    name: "Name",
+    email: "Email",
+    phone: "Phone",
+    natureOfMeeting: "Nature of meeting",
+    option1: "Suggested time 1",
+    option2: "Suggested time 2",
+    option3: "Suggested time 3",
+  };
+
+  const rows = Object.entries(fieldLabels)
+    .filter(([k]) => data[k])
+    .map(
+      ([k, label]) =>
+        `<tr><td style="padding: 6px 12px; color: #888; white-space: nowrap;">${label}</td><td style="padding: 6px 12px; color: #222;">${data[k]}</td></tr>`
+    )
+    .join("");
+
+  await sgMail.send({
+    to: artistEmail,
+    from,
+    replyTo: data.email || from,
+    subject: `New meeting request from ${data.name || "unknown"}`,
+    html: `
+      <div style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
+        <h2 style="font-weight: 300; font-size: 22px; margin-bottom: 16px;">New Meeting Request</h2>
+        <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+          ${rows}
+        </table>
+      </div>
+    `,
+  });
+}
+
+/**
  * Send a booking inquiry alert to the artist's email.
  */
 export async function sendBookingAlert(data: Record<string, string>): Promise<void> {
