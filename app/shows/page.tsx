@@ -16,8 +16,8 @@ interface Show {
 // Update these shows as dates approach
 const shows: Show[] = [
   {
-    id: "40",
-    date: "9 Sep 2026",
+    id: "47",
+    date: "28 Oct 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -26,17 +26,17 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "50",
-    date: "12 Sep 2026",
-    dayOfWeek: "Saturday",
+    id: "60",
+    date: "3 Nov 2026",
+    dayOfWeek: "Tuesday",
     venue: "432 Bleu",
     city: "Online",
     ticketUrl: "https://boxoffice.432bleu.com",
-    note: "4pm · Livestream"
+    note: "Cyber Concert"
   },
   {
-    id: "41",
-    date: "16 Sep 2026",
+    id: "48",
+    date: "4 Nov 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -45,8 +45,17 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "42",
-    date: "23 Sep 2026",
+    id: "61",
+    date: "10 Nov 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "49",
+    date: "11 Nov 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -55,8 +64,17 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "43",
-    date: "30 Sep 2026",
+    id: "62",
+    date: "17 Nov 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "52",
+    date: "18 Nov 2026",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -65,17 +83,168 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "51",
-    date: "3 Oct 2026",
+    id: "53",
+    date: "20 Nov 2026",
+    dayOfWeek: "Friday",
+    venue: "Fox's Lair",
+    city: "Augusta",
+    stateCountry: "GA",
+    note: "9pm · w/ Raelyn, Oscar & Bentley"
+  },
+  {
+    id: "63",
+    date: "24 Nov 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "54",
+    date: "25 Nov 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "64",
+    date: "1 Dec 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "55",
+    date: "2 Dec 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "65",
+    date: "8 Dec 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "56",
+    date: "9 Dec 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "66",
+    date: "15 Dec 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "57",
+    date: "16 Dec 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "67",
+    date: "22 Dec 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "58",
+    date: "23 Dec 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "68",
+    date: "29 Dec 2026",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "59",
+    date: "30 Dec 2026",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "69",
+    date: "5 Jan 2027",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "70",
+    date: "6 Jan 2027",
+    dayOfWeek: "Wednesday",
+    venue: "The Highlander",
+    city: "North Augusta",
+    stateCountry: "SC",
+    ticketUrl: "https://www.facebook.com/abritishpub",
+    note: "Host: Open Mic Night"
+  },
+  {
+    id: "71",
+    date: "9 Jan 2027",
     dayOfWeek: "Saturday",
     venue: "Fox's Lair",
     city: "Augusta",
     stateCountry: "GA",
-    note: "$5 cover · 9pm"
+    note: "9pm · w/ Instant Shaman"
   },
   {
-    id: "44",
-    date: "7 Oct 2026",
+    id: "72",
+    date: "12 Jan 2027",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "73",
+    date: "13 Jan 2027",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -84,8 +253,17 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "45",
-    date: "14 Oct 2026",
+    id: "74",
+    date: "19 Jan 2027",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
+  },
+  {
+    id: "75",
+    date: "20 Jan 2027",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
@@ -94,18 +272,17 @@ const shows: Show[] = [
     note: "Host: Open Mic Night"
   },
   {
-    id: "46",
-    date: "21 Oct 2026",
-    dayOfWeek: "Wednesday",
-    venue: "The Highlander",
-    city: "North Augusta",
-    stateCountry: "SC",
-    ticketUrl: "https://www.facebook.com/abritishpub",
-    note: "Host: Open Mic Night"
+    id: "76",
+    date: "26 Jan 2027",
+    dayOfWeek: "Tuesday",
+    venue: "432 Bleu",
+    city: "Online",
+    ticketUrl: "https://boxoffice.432bleu.com",
+    note: "Cyber Concert"
   },
   {
-    id: "47",
-    date: "28 Oct 2026",
+    id: "77",
+    date: "27 Jan 2027",
     dayOfWeek: "Wednesday",
     venue: "The Highlander",
     city: "North Augusta",
