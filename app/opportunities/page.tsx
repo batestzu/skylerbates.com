@@ -23,12 +23,6 @@ const venues = [
     description: "Jazz musicians for public and private events. Groups and individuals encouraged to apply.",
   },
   {
-    href: "/opportunities/crowne-plaza",
-    title: "Crowne Plaza",
-    tagline: "Hotel · North Augusta, SC",
-    description: "Live entertainment at Riverside Village. Solos, duos, DJs, and jazz trios welcome.",
-  },
-  {
     href: "/opportunities/432-bleu",
     title: "432 Bleu",
     tagline: "Interactive Concert Venue",
