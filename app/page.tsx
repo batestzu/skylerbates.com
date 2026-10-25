@@ -13,6 +13,14 @@ const photos = [
   { id: 5, type: "video", src: "https://www.youtube.com/embed/OafaooBQ10c", alt: "Plz Don Call", aspect: "wide" },
   { id: 6, type: "video", src: "https://www.youtube.com/embed/k-PObcemCjU", alt: "She Likes Sara More Than Me", aspect: "wide" },
   { id: 7, type: "video", src: "https://www.youtube.com/embed/VzSdinFkxKk", alt: "Used to be", aspect: "tall" },
+  { id: 8, type: "photo", src: "/photos/SouthBound 1.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 9, type: "photo", src: "/photos/SouthBound 2.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 10, type: "photo", src: "/photos/SouthBound 3.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 11, type: "photo", src: "/photos/SouthBound 4.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 12, type: "photo", src: "/photos/SouthBound 5.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 13, type: "photo", src: "/photos/SouthBound 6.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 14, type: "photo", src: "/photos/SouthBound 7.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 15, type: "photo", src: "/photos/SouthBound 8.jpg", alt: "SouthBound", aspect: "tall" },
 ];
 
 const fadeUp = {
