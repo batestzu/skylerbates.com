@@ -21,6 +21,7 @@ const photos = [
   { id: 13, type: "photo", src: "/photos/SouthBound 6.jpg", alt: "SouthBound", aspect: "tall" },
   { id: 14, type: "photo", src: "/photos/SouthBound 7.jpg", alt: "SouthBound", aspect: "tall" },
   { id: 15, type: "photo", src: "/photos/SouthBound 8.jpg", alt: "SouthBound", aspect: "tall" },
+  { id: 16, type: "photo", src: "/photos/Studio Guitar.jpg", alt: "Studio guitar", aspect: "wide" },
 ];
 
 const fadeUp = {
