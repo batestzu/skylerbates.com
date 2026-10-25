@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 type Step = "form" | "loading" | "success" | "error";
@@ -29,6 +29,9 @@ export default function BookingPage() {
     budget: "",
     message: "",
   });
+  // Honeypot — invisible to real users, catches bots that blindly fill every input.
+  const [company, setCompany] = useState("");
+  const mountedAt = useRef(Date.now());
 
   function update(field: string, value: string) {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -43,7 +46,11 @@ export default function BookingPage() {
       const res = await fetch("/api/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          company,
+          elapsedMs: Date.now() - mountedAt.current,
+        }),
       });
       if (!res.ok) throw new Error((await res.json()).error || "Something went wrong.");
       setStep("success");
@@ -112,6 +119,19 @@ export default function BookingPage() {
             onSubmit={handleSubmit}
             className="space-y-6"
           >
+            {/* Honeypot — hidden from real users, left open for bots to fill */}
+            <div className="absolute left-[-9999px] w-px h-px overflow-hidden" aria-hidden="true">
+              <label htmlFor="company">Company</label>
+              <input
+                id="company"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+              />
+            </div>
+
             {/* Row 1: Name + Email */}
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
