@@ -50,10 +50,10 @@ const events: Event[] = [
   },
   {
     venue: "432 Bleu",
-    context: "Weekly virtual concert series — livestreamed",
+    context: "Cyber Venue",
     photos: [
       { src: "/portfolio/DaveMercer432Bleu.jpg", act: "Dave “Muz” Mercer", width: 1080, height: 1080 },
-      { src: "/portfolio/InstantShamanPoster432Bleu.jpg", act: "Instant Shaman — Acoustic", width: 900, height: 1600 },
+      { src: "/portfolio/InstantShamanPoster432Bleu.jpg", act: "Instant Shaman — Acoustic", width: 1131, height: 1600 },
     ],
   },
   {
@@ -89,7 +89,7 @@ const events: Event[] = [
 const strengths = [
   {
     title: "Many programs, one producer",
-    body: "Weekly series running in parallel at The Highlander, The Partridge Inn, and The Crowne Plaza, plus a weekly livestreamed “Cyber Concert” at 432 Bleu — each with its own talent, schedule, and venue partner.",
+    body: "Weekly series running in parallel at The Highlander, The Partridge Inn, and The Crowne Plaza, plus concerts at 432 Bleu, A Cyber Venue.",
   },
   {
     title: "Built for the room and the audience",
