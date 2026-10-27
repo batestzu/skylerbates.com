@@ -146,7 +146,7 @@ export default function PortfolioPage() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-[#F5F0EB]/60 max-w-2xl mb-16 leading-relaxed font-[family-name:var(--font-inter)]"
         >
-          Through VibeWithUS Entertainment, I produce live music programs across multiple venues every
+          Through 432 Intelligence DBA VibeWithUS Entertainment, I produce live music programs across multiple venues every
           week. I book the talent, work with each venue on its space, handle the logistics, and run
           the night. The work ranges from a benefit concert I threw to Masters Week programming across
           a historic hotel&apos;s rooftop, restaurant, and veranda, and every event is designed around
