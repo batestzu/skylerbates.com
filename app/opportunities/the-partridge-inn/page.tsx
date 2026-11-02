@@ -3,8 +3,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import VenuePhotos from "@/components/VenuePhotos";
 
 type Step = "form" | "loading" | "success";
+
+const photos = [
+  { src: "/portfolio/IMG_4639.jpg", act: "DJ Cellus — Rooftop" },
+  { src: "/portfolio/IMG_4796.jpg", act: "CC WiTT — Restaurant" },
+  { src: "/portfolio/IMG_4803.jpg", act: "Matt Dalheimer — Veranda" },
+  { src: "/portfolio/FernandoGonzalesPI.jpg", act: "Fernando Gonzales" },
+  { src: "/portfolio/GregHesterDevranRoofPI.jpg", act: "Greg Hester & Devran — Rooftop" },
+  { src: "/portfolio/ChrisNeilsenPI.jpg", act: "Chris Nielsen" },
+];
 
 export default function ThePartridgeInnPage() {
   const [step, setStep] = useState<Step>("form");
@@ -235,6 +245,8 @@ export default function ThePartridgeInnPage() {
             </button>
           </motion.form>
         )}
+
+        <VenuePhotos venue="The Partridge Inn" photos={photos} />
       </div>
     </div>
   );

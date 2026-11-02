@@ -3,8 +3,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import VenuePhotos from "@/components/VenuePhotos";
 
 type Step = "form" | "loading" | "success";
+
+const photos = [
+  { src: "/portfolio/IMG_2698.jpg", act: "Jacob Phillips & Freddie Gray" },
+  { src: "/portfolio/ABandCalledMooseHI.jpg", act: "A Band Called Moose" },
+  { src: "/portfolio/BlueLavaHI.jpg", act: "Blue Lava" },
+  { src: "/portfolio/PublicMindHI.jpg", act: "Public Mind" },
+  { src: "/portfolio/DougJamesHI.jpg", act: "Doug James" },
+  { src: "/portfolio/ChrisSebbyHIRotate90.jpg", act: "Chris Sebby" },
+];
 
 export default function TheHighlanderPage() {
   const [step, setStep] = useState<Step>("form");
@@ -234,6 +244,8 @@ export default function TheHighlanderPage() {
             </button>
           </motion.form>
         )}
+
+        <VenuePhotos venue="The Highlander" photos={photos} />
       </div>
     </div>
   );
