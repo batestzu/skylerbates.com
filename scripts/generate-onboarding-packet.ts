@@ -25,7 +25,6 @@ const sections: { title: string; items: string[] }[] = [
     items: [
       "The Highlander — Load-in: as early as 4:00 PM; park around back and inform staff — there is a ramp and rear entrance. Self-soundcheck: there is a Yamaha powered mixer with two 15s installed. A monitor can be daisy-chained, or there is an aux output for powered monitors. Free Yuengling!",
       "The Partridge Inn — Load-in: as early as 4:00 PM. Check with staff for rooftop entry prior to 5:00 PM. Park in the lower parking deck (Hickman Road entrance). Carts are available at the front entrance of the hotel — please return them when finished loading. You will be provided photos of playing locations. In both cases, check sound with the host and/or bartender. There are no food or beverage comps.",
-      "Crowne Plaza — Load-in: as early as 4:00 PM, or 5:00 PM for roof shows. You may temporarily park (with hazards on) in front of the Salt & Marrow entrance; after you have unloaded, park in the parking garage nearest the hotel. If you have a parking fee in the garage, you may submit a receipt and be reimbursed separately from your performance compensation. Speak to your booking agent for further details.",
     ],
   },
   {
