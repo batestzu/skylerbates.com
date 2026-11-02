@@ -99,10 +99,6 @@ const strengths = [
     title: "Scaling for peak moments",
     body: "Masters Week, when Augusta hosts visitors from around the world, means taking a weekly program and expanding it across a rooftop, a restaurant, and a veranda at once.",
   },
-  {
-    title: "Production tools built with AI",
-    body: "I use AI to build my own production tools: artist recruitment forms for each venue, an onboarding packet covering load-in, house rules, and agreements, automated contractor paperwork, and a booking intake that sorts real requests from spam.",
-  },
 ];
 
 const allPhotos =events.flatMap((e) => e.photos.map((p) => ({ ...p, venue: e.venue })));
@@ -175,7 +171,9 @@ export default function PortfolioPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="bg-[#080808] p-6 md:p-8"
+              className={`bg-[#080808] p-6 md:p-8 ${
+                strengths.length % 2 && i === strengths.length - 1 ? "sm:col-span-2" : ""
+              }`}
             >
               <h3 className="text-2xl text-[#F5F0EB] mb-3 font-[family-name:var(--font-cormorant)]">
                 {s.title}
