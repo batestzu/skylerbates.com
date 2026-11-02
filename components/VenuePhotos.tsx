@@ -15,7 +15,7 @@ export default function VenuePhotos({ venue, photos }: { venue: string; photos: 
       <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#F5F0EB] mb-8">
         Live at {venue}
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
         {photos.map((p, i) => (
           <motion.figure
             key={p.src}
@@ -29,7 +29,7 @@ export default function VenuePhotos({ venue, photos }: { venue: string; photos: 
                 src={p.src}
                 alt={`${p.act} at ${venue}`}
                 fill
-                sizes="(min-width: 640px) 250px, 50vw"
+                sizes="(min-width: 768px) 150px, 50vw"
                 className="object-cover"
                 style={p.position ? { objectPosition: p.position } : undefined}
               />
