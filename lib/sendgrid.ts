@@ -210,7 +210,10 @@ export async function sendMeetingAlert(data: Record<string, string>): Promise<vo
 /**
  * Send a booking inquiry alert to the artist's email.
  */
-export async function sendBookingAlert(data: Record<string, string>): Promise<void> {
+export async function sendBookingAlert(
+  data: Record<string, string>,
+  { subject = "New booking inquiry", heading = "New Booking Inquiry" } = {}
+): Promise<void> {
   configureClient();
 
   const artistEmail = process.env.ARTIST_EMAIL;
@@ -231,10 +234,10 @@ export async function sendBookingAlert(data: Record<string, string>): Promise<vo
     to: artistEmail,
     from,
     replyTo: data.email || from,
-    subject: `New booking inquiry from ${data.name || "unknown"}`,
+    subject: `${subject} from ${data.name || "unknown"}`,
     html: `
       <div style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
-        <h2 style="font-weight: 300; font-size: 22px; margin-bottom: 16px;">New Booking Inquiry</h2>
+        <h2 style="font-weight: 300; font-size: 22px; margin-bottom: 16px;">${heading}</h2>
         <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
           ${rows}
         </table>
