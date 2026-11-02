@@ -17,10 +17,6 @@ const venueLoadIns = [
     venue: "The Partridge Inn",
     details: "Load-in: as early as 4:00 PM. Check with staff for rooftop entry prior to 5:00 PM. Park in the lower parking deck (Hickman Road entrance). Carts are available at the front entrance of the hotel — please return them when finished loading. You will be provided photos of playing locations. In both cases, check sound with the host and/or bartender. There are no food or beverage comps.",
   },
-  {
-    venue: "Crowne Plaza",
-    details: "Load-in: as early as 4:00 PM, or 5:00 PM for roof shows. You may temporarily park (with hazards on) in front of the Salt & Marrow entrance; after you have unloaded, park in the parking garage nearest the hotel. If you have a parking fee in the garage, you may submit a receipt and be reimbursed separately from your performance compensation. Speak to your booking agent for further details.",
-  },
 ];
 
 const sections: Section[] = [
