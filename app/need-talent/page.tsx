@@ -118,7 +118,7 @@ export default function NeedTalentPage() {
           className="text-sm leading-relaxed text-[#F5F0EB]/60 font-[family-name:var(--font-inter)] mb-12 max-w-xl"
         >
           Planning an event and need live entertainment? At 432 Intelligence Inc, we have an
-          extensive network of artists, musicians, performers, comedians and more.
+          extensive network of artists, musicians, performers, comedians, and more to fit your crowd, space, and budget.
           Tell us about your event and we&apos;ll follow up with options.
         </motion.p>
 
