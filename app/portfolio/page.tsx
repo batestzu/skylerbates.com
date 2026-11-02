@@ -81,7 +81,7 @@ const events: Event[] = [
       { src: "/portfolio/OmarKaleHI.jpg", act: "Omar Kale", width: 1200, height: 1600 },
       { src: "/portfolio/PublicMindHI.jpg", act: "Public Mind", width: 1200, height: 1600 },
       { src: "/portfolio/RandyG.jpg", act: "Randy G", width: 1200, height: 1600 },
-      { src: "/portfolio/WillMoonOccultsHI.jpg", act: "Will Moon — Occults", width: 1200, height: 1600 },
+      { src: "/portfolio/WillMoonOccultsHI.jpg", act: "Moon Occults", width: 1200, height: 1600 },
     ],
   },
 ];
