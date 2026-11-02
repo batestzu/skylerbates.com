@@ -14,6 +14,10 @@ const photos = [
   { src: "/portfolio/PublicMindHI.jpg", act: "Public Mind" },
   { src: "/portfolio/DougJamesHI.jpg", act: "Doug James" },
   { src: "/portfolio/ChrisSebbyHIRotate90.jpg", act: "Chris Sebby" },
+  { src: "/portfolio/OmarKaleHI.jpg", act: "Omar Kale" },
+  { src: "/portfolio/WillMoonOccultsHI.jpg", act: "Moon Occults" },
+  { src: "/portfolio/EricTrusigHI.jpg", act: "Eric Trusig" },
+  { src: "/portfolio/IanRistrophHI1.jpg", act: "Ian Ristroph" },
 ];
 
 export default function TheHighlanderPage() {

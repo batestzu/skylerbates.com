@@ -14,6 +14,10 @@ const photos = [
   { src: "/portfolio/FernandoGonzalesPI.jpg", act: "Fernando Gonzales" },
   { src: "/portfolio/GregHesterDevranRoofPI.jpg", act: "Greg Hester & Devran — Rooftop" },
   { src: "/portfolio/ChrisNeilsenPI.jpg", act: "Chris Nielsen" },
+  { src: "/portfolio/OmarKalePIRoof.jpg", act: "Omar Kale — Rooftop" },
+  { src: "/portfolio/MikhillDesaiPI.jpg", act: "Mikhil Desai — Rooftop", position: "70% center" },
+  { src: "/portfolio/JamesHuttonPI.jpg", act: "James Hutton" },
+  { src: "/portfolio/KeithGregoryPI.jpg", act: "Keith Gregory" },
 ];
 
 export default function ThePartridgeInnPage() {

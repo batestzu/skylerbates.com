@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-type Photo = { src: string; act: string };
+// position: optional object-position for landscape shots cropped to the 3:4 frame
+type Photo = { src: string; act: string; position?: string };
 
 export default function VenuePhotos({ venue, photos }: { venue: string; photos: Photo[] }) {
   return (
@@ -30,6 +31,7 @@ export default function VenuePhotos({ venue, photos }: { venue: string; photos: 
                 fill
                 sizes="(min-width: 640px) 250px, 50vw"
                 className="object-cover"
+                style={p.position ? { objectPosition: p.position } : undefined}
               />
             </div>
             <figcaption className="mt-2 text-xs text-[#F5F0EB]/50 font-[family-name:var(--font-inter)]">
