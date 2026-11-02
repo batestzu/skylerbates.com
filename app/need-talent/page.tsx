@@ -117,8 +117,8 @@ export default function NeedTalentPage() {
           transition={{ delay: 0.45, duration: 0.5 }}
           className="text-sm leading-relaxed text-[#F5F0EB]/60 font-[family-name:var(--font-inter)] mb-12 max-w-xl"
         >
-          Planning an event and need live entertainment? Through 432 Intelligence Inc. we
-          connect you with musicians and performers who fit your crowd, space, and budget.
+          Planning an event and need live entertainment? At 432 Intelligence Inc, we have an
+          extensive network of artists, musicians, performers, comedians, and more.
           Tell us about your event and we&apos;ll follow up with options.
         </motion.p>
 
