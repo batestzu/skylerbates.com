@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
     console.log("[/api/booking] inquiry received", { ip, name, email });
 
     const { company: _company, elapsedMs: _elapsedMs, ...data } = body as Record<string, unknown>;
-    // The /need-talent page shares this endpoint; its alerts get their own subject line.
+    // The /needtalent page shares this endpoint; its alerts get their own subject line.
     if (data.inquiryType === "talent") {
       await sendBookingAlert(data as Record<string, string>, {
         subject: "New talent request",

@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   },
   // Required to allow Stripe webhook raw body access
   experimental: {},
+  async redirects() {
+    return [{ source: "/need-talent", destination: "/needtalent", permanent: true }];
+  },
 };
 
 export default nextConfig;
